@@ -1,5 +1,3 @@
-#include <AccelStepper.h>
-#include <MultiStepper.h>
 #include <Servo.h>
 
 #define Stepper_Enable_Pin 10
@@ -21,9 +19,6 @@
 #define Positive HIGH
 #define Negative LOW
 
-AccelStepper stepper_X = AccelStepper(motorInterfaceType, stepPin_X, dirPin_X);
-AccelStepper stepper_Y = AccelStepper(motorInterfaceType, stepPin_Y, dirPin_Y);
-MultiStepper steppers;
 Servo servo_Z;
 
 bool end_stop_X = false;
